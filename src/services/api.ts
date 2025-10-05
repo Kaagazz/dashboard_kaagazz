@@ -1,7 +1,7 @@
 import type { Order, User, UserDetails, DashboardStats } from '../types';
 import type { DateRange } from "react-day-picker";
 
-const API_BASE_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
+const API_BASE_URL = import.meta.env.VITE_BACKEND_URL
 
 // A generic fetcher function
 async function apiFetch(endpoint: string, options: RequestInit = {}) {
